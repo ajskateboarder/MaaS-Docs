@@ -22,9 +22,9 @@ body {
 .navigation .logo { text-align: center; margin: 20px 0; }
 .navigation .logo img { width: 80px; }
 .navigation .menu { padding: 0; }
-.navigation .menu li { padding: 5px 10px; color: black; }
+.navigation .menu li { padding: 5px 10px; }
 .navigation .menu li.active { background-color: #1B77D1; }
-.navigation .menu a { color: #fff; text-decoration: none; }
+.navigation .menu a { color: black; text-decoration: none; }
 .navigation .info-message { margin-top: 25px; text-align: center; border-top: 1px dashed #666; }
 .navigation .info-message a { color: #1B77D1; text-decoration: none; }
 
