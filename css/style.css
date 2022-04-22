@@ -16,7 +16,7 @@ body {
 
 .wrapper .content, .wrapper .navigation, .wrapper .method-menu { -webkit-transition: all 0.3s; -o-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
 
-.navigation { width: 200px; height: 100%; position: fixed; left: 0; top: 0; background-color: #2E3336; color: #fff; }
+.navigation { width: 200px; height: 100%; position: fixed; left: 0; top: 0; background-color: white; color: black; }
 .navigation div { padding: 10px 5px; -moz-box-sizing: border-box; box-sizing: border-box; }
 .navigation .mobile-menu { display: none; }
 .navigation .logo { text-align: center; margin: 20px 0; }
