@@ -24,13 +24,13 @@ body {
 .navigation .menu { padding: 0; }
 .navigation .menu li { padding: 5px 10px; }
 .navigation .menu li.active { background-color: #1B77D1; }
-.navigation .menu a { color: black; text-decoration: none; }
+.navigation .menu a { color: black; text-decoration: none; display: block }
 .navigation .info-message { margin-top: 25px; text-align: center; border-top: 1px dashed #666; }
 .navigation .info-message a { color: #1B77D1; text-decoration: none; }
 
 .content { width: -webkit-calc(100% - 200px); width: -moz-calc(100% - 200px); width: calc(100% - 200px); margin-left: 200px; }
 .content .method-menu { position: fixed; width: -webkit-calc(50% - 140px); width: -moz-calc(50% - 140px); width: calc(50% - 140px); top: 0; right: 0; background-color: #000; padding: 5px 20px; margin: 0; }
-.method-menu li { display: inline; color: #fff; padding: 0 10px; cursor: pointer; }
+.method-menu li { : inline; color: #fff; padding: 0 10px; cursor: pointer; }
 .method-menu li.active, .wrapper .content .method-menu li:hover { font-weight: 600; }
 .method-wrapper .info-text, .wrapper .content .method-wrapper .warning-text { padding: 10px; }
 .method-wrapper .info-text:before, .wrapper .content .method-wrapper .warning-text:before { font-family: FontAwesome; font-style: normal; margin-right: 10px; }
