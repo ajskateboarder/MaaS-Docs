@@ -60,6 +60,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
     }
   };
+  
+  if (window.navigator.userAgent.includes('Mobile')) {
+    document.write('This is not a mobile friendly website...') 
+  }
 
 });
 
