@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/extras/atom-one-dark.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <script type="text/javascript" src="js/vanilla_script.js"></script>
@@ -20,15 +21,12 @@
       <nav class="navigation">
         <i class="fas fa-bars mobile-menu"></i>
         <div class="logo">
-          <img src="https://ajskateboarder.github.io/memewizard/_images/logo.png" alt="Logo">
+          <img src="https://ajskateboarder.github.io/memewizard/_images/logo.png" alt="Logo"> <br> Documentation
         </div>
-        <!-- <div class="search">
-          <input type="search" placeholder="Search">
-        </div> -->
+
         <ul class="menu">
           <li class="active"><a id="introduction">Introduction</a></li>
-          <li><a id="get-started">Get Started</a></li>
-          <li><a id="page">Page</a></li>
+          <li><a id="get-memes">Get memes</a></li>
           <li><a id="post">Post</a></li>
           <li><a id="responses">Responses</a></li>
         </ul>
@@ -39,39 +37,22 @@
 
       <section class="content">
         <div class="method-wrapper">
-          <ul class="method-menu">
-            <li data-lang="bash" class="active">curl</li>
-            <li data-lang="ruby">Ruby</li>
-            <li data-lang="python">Python</li>
-            <li data-lang="php">PHP</li>
-            <li data-lang="node">Node</li>
-          </ul>
 
           <div class="method" id="introduction">
             <div class="information">
-              <h1>Informations</h1>
+              <h1>Introduction</h1>
               <div class="text">
-                <p>Welcome to the Greet API! You can use our API to access Greet API endpoints, which can get information on data to your page and individual posts in our database.</p>
-                <p>We have language bindings in curl, Ruby, PHP and Node! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-                <p>This API documentation page was created by Greet to customize and integrate with your own platform.</p>
-              </div>
-              <p class="info-text">Token will expire in 30 days.</p>
-            </div>
-          </div>
-          <div class="method" id="get-started">
-            <div class="information">
-              <h1>Get Started</h1>
-              <div class="text">
-                <p></p>
+                <p>Hello there! 👋 This is API endpoint documentation for MaaS (memewizard as a service).</p>
+                <p>Memewizard was developed as a Python library and was now created as a RESTful API to the deliver the power of memes to other languages like Javascript or Ruby.</p>
+                <p>Speaking of JavaScript and Ruby, we have code samples for those languages! Just select a language from the bar in the top-left to see examples.</p>
               </div>
             </div>
           </div>
-          <div class="method" id="page">
+          <div class="method" id="get-memes">
             <div class="information">
-              <h1>Page</h1>
+              <h1>Get memes</h1>
               <div class="text">
-                <h4>GET Page Data</h4>
-                <p>Endpoint to retrieve all page related data.</p>
+                <p>Endpoint to retrieve all meme related data.</p>
 
                 <h4>HTTP Request</h4>
                 <quote>GET https://greet.chat/api/v1/page/:page_id</quote>
@@ -103,29 +84,6 @@
             <div class="code">
               <p id="message">To request page data, use this code:</p>
               <pre class="request">
-                <code class="bash">
-                  curl -X GET \
-                    'https://greet.chat/api/v1/page/xxxxxxxxxx?period=week' \
-                    -H 'Authorization: Bearer xxxxxxxxxx' \
-                    -H 'Cache-Control: no-cache' \
-                    -H 'User: xxxxxxxxxx'
-                </code>
-                <code class="ruby">
-                  require 'uri'
-                  require 'net/http'
-
-                  url = URI("https://greet.chat/api/v1/page/xxxxxxxxxx?period=week")
-
-                  http = Net::HTTP.new(url.host, url.port)
-
-                  request = Net::HTTP::Get.new(url)
-                  request["User"] = 'xxxxxxxxxx'
-                  request["Authorization"] = 'Bearer xxxxxxxxxx'
-                  request["Cache-Control"] = 'no-cache'
-
-                  response = http.request(request)
-                  puts response.read_body
-                </code>
                 <code class="python">
                   import requests
 
@@ -142,6 +100,22 @@
                   response = requests.request("GET", url, headers=headers, params=querystring)
 
                   print(response.text)
+                </code>
+                <code class="ruby">
+                  require 'uri'
+                  require 'net/http'
+
+                  url = URI("https://greet.chat/api/v1/page/xxxxxxxxxx?period=week")
+
+                  http = Net::HTTP.new(url.host, url.port)
+
+                  request = Net::HTTP::Get.new(url)
+                  request["User"] = 'xxxxxxxxxx'
+                  request["Authorization"] = 'Bearer xxxxxxxxxx'
+                  request["Cache-Control"] = 'no-cache'
+
+                  response = http.request(request)
+                  puts response.read_body
                 </code>
                 <code class="php">
                   $request = new HttpRequest();

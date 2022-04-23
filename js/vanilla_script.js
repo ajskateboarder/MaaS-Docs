@@ -61,9 +61,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   };
   
-  if (window.navigator.userAgent.includes('Mobile')) {
-    document.write('This is not a mobile friendly website...') 
-  }
+  if (screen.width < 768) 
+    document.write('<style>.sometext { margin: 0; padding: 0; height: 80%; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 9vw; }</style><div class="sometext">This site is not mobile friendly. Please view this site on something at least as big as an iPad.</div>')
 
 });
 
